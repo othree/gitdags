@@ -73,21 +73,19 @@
   gitdags node/.style={
     draw,
     node distance = 1.4em,
-    drop shadow   = {opacity=0.15},
     font          = \fontfamily{lmtt}\selectfont\small,
   },
   DAGref/.style={
     gitdags node,
     shape          = rectangle,
     minimum height = 1.4em,
-    draw           = solarized-base01,
+    draw           = solarized-base1,
     thick,
-    font           = \fontfamily{lmtt}\selectfont\scriptsize,
   },
   DAGedge/.style={
     semithick,
     Latex-,
-    draw = gray,
+    draw = white,
   },
   DAGrefedge/.style={
     DAGedge,
@@ -97,11 +95,10 @@
   DAGcommit/.style={
     gitdags node,
     shape                        = rounded rectangle,
-    rounded rectangle arc length = 90,
     minimum height               = 1.6em,
-    minimum width                = 2em,
-    draw                         = solarized-base01,
-    fill                         = solarized-green!20,
+    minimum width                = 3em,
+    draw                         = solarized-base1,
+    fill                         = solarized-green!30,
     very thick,
   },
   graphs/DAG/.style={
@@ -139,14 +136,13 @@
     -Stealth,
     dashed,
     thick,
-    draw         = solarized-base02,
-    draw opacity = .75,
+    draw         = solarized-base3,
   },
   highlighted commit/.style={
     DAGcommit,
     reset preaction,
     fill opacity = 0,
-    draw         = solarized-base02,
+    draw         = solarized-base2,
   },
   problematic commits/.style={
     reset preaction,
